@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# Xcode build output
+DerivedData/
+build/
+Logs/
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+
+# Xcode user-specific state
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+xcuserdata/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+
+Docs/

@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		AD16F4E62FD9D26300E6C3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD16F4B72FD9887600E6C3FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD16F4BE2FD9887600E6C3FD;
+			remoteInfo = "Secure-Vault";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AD16F4BF2FD9887600E6C3FD /* Secure-Vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secure-Vault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD16F4E22FD9D26200E6C3FD /* Secure-VaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Secure-VaultTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = "Secure-Vault";
 			sourceTree = "<group>";
 		};
+		AD16F4E32FD9D26300E6C3FD /* Secure-VaultTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Secure-VaultTests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AD16F4BC2FD9887600E6C3FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD16F4DF2FD9D26200E6C3FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				AD16F4C12FD9887600E6C3FD /* Secure-Vault */,
+				AD16F4E32FD9D26300E6C3FD /* Secure-VaultTests */,
 				AD16F4C02FD9887600E6C3FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				AD16F4BF2FD9887600E6C3FD /* Secure-Vault.app */,
+				AD16F4E22FD9D26200E6C3FD /* Secure-VaultTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = AD16F4BF2FD9887600E6C3FD /* Secure-Vault.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AD16F4E12FD9D26200E6C3FD /* Secure-VaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD16F4E82FD9D26300E6C3FD /* Build configuration list for PBXNativeTarget "Secure-VaultTests" */;
+			buildPhases = (
+				AD16F4DE2FD9D26200E6C3FD /* Sources */,
+				AD16F4DF2FD9D26200E6C3FD /* Frameworks */,
+				AD16F4E02FD9D26200E6C3FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD16F4E72FD9D26300E6C3FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AD16F4E32FD9D26300E6C3FD /* Secure-VaultTests */,
+			);
+			name = "Secure-VaultTests";
+			packageProductDependencies = (
+			);
+			productName = "Secure-VaultTests";
+			productReference = AD16F4E22FD9D26200E6C3FD /* Secure-VaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					AD16F4BE2FD9887600E6C3FD = {
 						CreatedOnToolsVersion = 26.5;
+					};
+					AD16F4E12FD9D26200E6C3FD = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = AD16F4BE2FD9887600E6C3FD;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				AD16F4BE2FD9887600E6C3FD /* Secure-Vault */,
+				AD16F4E12FD9D26200E6C3FD /* Secure-VaultTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AD16F4BD2FD9887600E6C3FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD16F4E02FD9D26200E6C3FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD16F4DE2FD9D26200E6C3FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD16F4E72FD9D26300E6C3FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD16F4BE2FD9887600E6C3FD /* Secure-Vault */;
+			targetProxy = AD16F4E62FD9D26300E6C3FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AD16F4C82FD9887800E6C3FD /* Debug */ = {
@@ -261,6 +336,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +369,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +384,50 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD16F4E92FD9D26300E6C3FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2FP3Z28UF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "KhalidTech.Secure-VaultTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secure-Vault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Secure-Vault";
+			};
+			name = Debug;
+		};
+		AD16F4EA2FD9D26300E6C3FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2FP3Z28UF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "KhalidTech.Secure-VaultTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secure-Vault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Secure-Vault";
 			};
 			name = Release;
 		};
@@ -327,6 +448,15 @@
 			buildConfigurations = (
 				AD16F4CB2FD9887800E6C3FD /* Debug */,
 				AD16F4CC2FD9887800E6C3FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD16F4E82FD9D26300E6C3FD /* Build configuration list for PBXNativeTarget "Secure-VaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD16F4E92FD9D26300E6C3FD /* Debug */,
+				AD16F4EA2FD9D26300E6C3FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
