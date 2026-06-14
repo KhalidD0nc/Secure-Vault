@@ -2,20 +2,7 @@
 //  KeychainService.swift
 //  Secure-Vault
 //
-//  Day 2 — Key Management.
-//
-//  A thin, generic wrapper over the iOS Keychain (kSecClassGenericPassword).
-//  It only knows how to store / read / delete raw `Data` blobs by an account
-//  string. It does NOT know what a "file key" is — that meaning lives in
-//  KeyManager. Keeping this layer dumb makes it reusable (we'll also store the
-//  auth token here on Day 4) and easy to test.
-//
-//  Security attributes used on every item:
-//    kSecAttrAccessibleWhenUnlockedThisDeviceOnly
-//      - WhenUnlocked     : the secret is only readable while the device is unlocked.
-//      - ThisDeviceOnly   : the secret never leaves this device via iCloud/iTunes
-//                           backups, so key material can't migrate to another device.
-//
+
 
 import Foundation
 import Security

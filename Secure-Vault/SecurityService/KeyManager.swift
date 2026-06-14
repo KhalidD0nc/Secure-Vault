@@ -2,20 +2,7 @@
 //  KeyManager.swift
 //  Secure-Vault
 //
-//  Day 2 — Key Management.
-//
-//  Bridges CryptoKit (SymmetricKey) and the Keychain (raw Data) and gives the
-//  rest of the app a "per-file key" vocabulary.
-//
-//  Design choice: PER-FILE KEY (not a single master key).
-//    - Each vault item gets its own random AES-256 key, identified by a keyId.
-//    - The keyId is stored in the item's metadata; the key bytes live ONLY in
-//      the Keychain. The key never appears in metadata, on the backend, or in
-//      any backup.
-//    - Deleting an item also deletes its key -> the ciphertext becomes
-//      permanently undecryptable ("crypto-shredding"), and a leak of one key
-//      exposes exactly one file.
-//
+
 
 import Foundation
 import CryptoKit
