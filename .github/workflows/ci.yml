@@ -45,6 +45,10 @@ jobs:
                       raise SystemExit(0)
           raise SystemExit("No available iOS 26 iPhone simulator was found.")
           PYCODE
+      - name: Boot the selected simulator
+        env:
+          SIMULATOR_UDID: ${{ steps.simulator.outputs.udid }}
+        run: xcrun simctl bootstatus "$SIMULATOR_UDID" -b
       - name: Build and run the existing test target
         env:
           SIMULATOR_UDID: ${{ steps.simulator.outputs.udid }}
@@ -56,4 +60,5 @@ jobs:
             -parallel-testing-enabled NO \
             -derivedDataPath "$RUNNER_TEMP/secure-vault-derived" \
             -resultBundlePath "$RUNNER_TEMP/secure-vault-tests.xcresult" \
-            CODE_SIGNING_ALLOWED=NO
+            CODE_SIGNING_ALLOWED=YES \
+            CODE_SIGN_IDENTITY=-

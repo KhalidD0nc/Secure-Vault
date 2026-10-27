@@ -89,8 +89,7 @@ xcodebuild test \
   -project Secure-Vault.xcodeproj \
   -scheme Secure-Vault \
   -destination 'platform=iOS Simulator,id=DEVICE_UDID' \
-  -parallel-testing-enabled NO \
-  CODE_SIGNING_ALLOWED=NO
+  -parallel-testing-enabled NO
 ```
 
 | Suite | Coverage |
@@ -99,7 +98,7 @@ xcodebuild test \
 | `KeychainServiceTests` | Store/read, missing entries, duplicate rejection, deletion, and idempotent deletion |
 | `VaultFlowTests` | Encrypted file persistence, recovery, source removal, tampering, deletion, and metadata reload |
 
-CI runs the project on an iPhone simulator using a macOS 26 runner. A shared scheme makes both the application and its test target discoverable outside a developer's local Xcode settings. Passing tests verify the covered cases; they do not establish a complete security assessment or a finished vault product.
+CI runs the project on an iPhone simulator using a macOS 26 runner and ad hoc simulator signing so Keychain tests retain the app's signing entitlements. A shared scheme makes both the application and its test target discoverable outside a developer's local Xcode settings. Passing tests verify the covered cases; they do not establish a complete security assessment or a finished vault product.
 
 ## Lifecycle details
 
